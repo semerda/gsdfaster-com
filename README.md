@@ -1,13 +1,17 @@
 # Website GSDfaster.com
 
-**GSDfaster.com is a Website for the GSDfaster and GTDfaster app. GSDfaster is an app for your iPhone, iPad and Watch to help you Get Stuff Done Faster & Be More Productive. The goal is for GSDfaster to be your distributed cognition tool which you can trust to empty your mind, gain control & stay focused.
+**[GSDfaster.com](https://www.gsdfaster.com/) is a Website for the GSDfaster and GTDfaster app. GSDfaster is an app for your iPhone, iPad and Watch to help you Get Stuff Done Faster & Be More Productive. The goal is for GSDfaster to be your distributed cognition tool which you can trust to empty your mind, gain control & stay focused.
+
+> "Most productive people are those with nothing in their head."
+*David Allen Do Lectures, Getting Things Done*
 
 ## How to get the apps
 
-* [GSDfaster](https://itunes.apple.com/us/app/gsdfaster-gtd-todo-lists-pomodoro/id488633128?mt=8)
-* [GTDfaster](https://itunes.apple.com/us/app/gtdfaster-free-get-things/id498872399?mt=8)
+* [GSDfaster on iTunes: https://itunes.apple.com/us/app/gsdfaster-gtd-todo-lists-pomodoro/id488633128?mt=8](https://itunes.apple.com/us/app/gsdfaster-gtd-todo-lists-pomodoro/id488633128?mt=8)
+* [GTDfaster on iTunes: https://itunes.apple.com/us/app/gtdfaster-free-get-things/id498872399?mt=8](https://itunes.apple.com/us/app/gtdfaster-free-get-things/id498872399?mt=8)
+* [GSDfaster.com website](https://www.gsdfaster.com/) - contains The GTD Knowledge Center
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cth-5fM-2Vg" frameborder="0" allowfullscreen></iframe>
+[![Watch GSDfaster Intro Video](https://img.youtube.com/vi/cth-5fM-2Vg/0.jpg)](https://www.youtube.com/watch?v=cth-5fM-2Vg)
 
 ## Notes
 
