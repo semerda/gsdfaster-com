@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block page_title %}What GSDfaster app version are you running?{% endblock %}
+
+{% block page_meta %}
+<link rel="stylesheet" href="/media/css/gsdfaster-blog.css">
+<style>
+#blog-header {
+    background-image: url('/media/blog/rainforest1.jpg');
+}
+</style>
+{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+
+{% endblock %}
+
+{% block content_body %}
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row">
+        <h1>What GSDfaster app version are you running?</h1>
+        <p>
+          <blockquote>
+            Keeping your GSDfaster app up to date is a good practise to get into it. It's like regular maintenance on your car. A good maintained car runs like clockwork.
+          </blockquote>
+        </p>
+      </div>
+      
+      <div class="row">
+        <p>When you email Ernest you might engage in a conversation where a GSDfaster app version number is mentioned. If you are unsure about the version of your GSDfaster app, here is how to find out.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <img src="/media/screenshots/buckets-settings-arrow.png" class="center-block" width="100%">
+        </div>
+        <div class="col-md-4">
+          <h3>How to check your GSDfaster app version</h3>
+
+          <p><strong>1.</strong> From the Buckets view (shown left) click the blue Gear located top left to open "Settings" view (shown right).</p>
+
+          <p><strong>2.</strong> Note the 1st row in the Settings view shows “app v1.6.8”. This is your app version.
+
+          <p><strong>TIP:</strong> The GTD Knowledge Center will contain in the footer version support. To take advantage of the feature, make sure your app's version is above the feature version.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="/media/screenshots/settings-app-version.png" class="center-block" width="100%">
+        </div>
+      </div>
+
+      <div class="row">
+        <p>It’s that simple. You should get into a pattern of updating your apps at least once a month. App updates are FREE and they fix bugs and introduce new features for FREE.</p>
+      </div>
+
+      {% include "/block/signature-share.html" %}
+
+      <div class="row">
+        <div class="col-md-6">
+          <p><a href="/blog/customer-testimonials-dec2015-jan2016/">&#10094; Latest Customer Testimonials</a></p>
+        </div>
+        <div class="col-md-6">
+          <p class="pull-right"><a href="/blog/apple-watch-gtd-pomodoro/">Watch - GTD & Pomodoro on your wrist &#10095;</a></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+
+      {% include "block/nav-list-3.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content_newsletter %}
+{% endblock %}

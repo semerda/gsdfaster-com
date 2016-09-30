@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block page_title %}About GSDfaster app - founded by Ernest Semerda{% endblock %}
+
+{% block page_meta %}
+<style>
+.navbar-inverse .navbar-nav>li>a {
+    color: #000000;
+}
+</style>
+{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <h1>About GSDfaster</h1>
+            <p>
+              <blockquote class="text-center">
+                <p>"Most productive people are those with nothing in their head."</p>
+                <footer>David Allen <cite title="GTD - Getting Things Done, Do Lectures">Do Lectures, Getting Things Done</cite></footer>
+              </blockquote>
+            </p>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        
+{% endblock %}
+
+{% block content_body %}
+      
+  <div class="row">
+    <div class="col-md-8">
+
+      <h2>My story</h2>
+
+      <p>My name is <a href="http://www.ernestsemerda.com/">Ernest</a> (pictured) and I am the founder of GSDfaster. I am an <a href="http://www.theroadtosiliconvalley.com/">Aussie living in Silicon Valley</a>; a software engineer by degree and experience, I love racing cars and sometimes doing a baby freeze (pictured).</p>
+
+      <h3>Back in 2007</h3>
+
+      <p>.. I got inspired by <a href="http://amzn.to/24RcZ7K">David Allen's book</a> on the GTD (Getting Things Done) method as a toolbox to freeing the mind from overload. Allen teaches a thinking process of moving implicit thoughts into an explicit actionable state. This helps with getting stuff done faster with elegance, ease and stress free. Starting, one must have a tool they can trust to dump all their thoughts into, to free their mind. Allen suggests a Moleskine but I wanted something more versatile. Since I always carry a phone, it was a natural progression to have a native GSDfaster app for the iPhone (circa 2012). All based on my original 2007 web based prototype. Since then, GSDfaster has only gotten better and better.</p>
+      
+      <h3>Not a list app</h3>
+
+      <p>GSDfaster app is not just a todo list maker app. But it can be used like one in its basic form. If you want to truly untap the power of productivity then take time to become familiar with GTD. <a href="/blog/">The GTD Knowledge Center</a> is a great place to start learning the power of <a href="/blog/gtd-method-getting-things-done/">Getting Things Done (GTD) method</a>, <a href="/blog/pomodoro-technique/">The Pomodoro Technique</a> and <a href="/blog/dwight-eisenhowers-urgency-importance-decision-matrix/">Dwight Eisenhower's Urgency-Importance Decision Matrix</a>. These work together with the basic idea of creating lists to help you manage things and get stuff done faster.</p>
+
+      <h3>Zen</h3>
+
+      <p><strong>GSDfaster is a unique app maintained out of sheer love for productivity and the feeling of zen I get from having an empty mind.</strong> There are no magic formulas. Just good habits of daily offloading my thoughts into GSDfaster as they flow in. GSDfaster does a far better job of remembering and reminding than my brain can. There is even science behind this where the <a href="/blog/psychology-gtd-tools/">brain sees tools as limb extension</a>.</p>
+
+      <h3>Lifetime support</h3>
+
+      <p>As long as I want to be productive this app will continue to exist and grow on the Apple platform with support for iPhone, iPad and Watch. Unlike companies that build productivity apps, they come and go. They are also driven by the bottom line. As a consumer (and I'm one too) it is hard to invest time and resources into short lived products. This is why GSDfaster is a far better investment into a productivity tool that stands the test of time.</p>
+
+      <a name="privacymatters"></a>
+      <h2>Privacy matters: incognito product development</h2>
+
+      <p><strong>My philosophy behind incognito product development is that privacy matters. When you meet a new person do you reveal all your inner personal secrets. Of course not.</strong> As an experienced software engineer I know how other companies store your data. Usually in plain text on unencrypted servers. Unless a government compliance forces them to step up their position and encrypt data in transit and at rest. You only ever find out the truth about your data privacy when they have a data breach. This is a frequent occurrence in the industry. Read about Social hacking to learn why exposing your personal information is a big deal.</p>
+
+      <p>GSDfaster runs independent of the cloud on your iOS device. It is a stand alone app. No one sees your data, only you. The app is always up, even when your internet isn't. It is easier for me to maintain it and gives you <a href="https://www.apple.com/business/docs/iOS_Security_Guide.pdf">unparalleld security</a> through the core iOS platform. Rest assured, I have researched and thought this through. GSDfaster is the only distributed cognition tool you need and can trust to empty your mind, gain control and stay focused.</p>
+
+      <h2>In Conclusion</h2>
+
+      <p>I hope you enjoy GSDfaster as much as I enjoy using and building it. Once you get into a good habit of freeing your mind you will wonder how you functioned without such powerful methods and tools. You may even inspire your friends and family when they see the positive change it has brought to your life. Finally if you have any questions or feedback please <a href="/contact/">contact me</a>.</p>
+
+    </div>
+    <div class="col-md-4 text-center">
+
+      <img src="/media/ernest-profile/ernest_semerda_profile_.jpg" width="230" class="img-square">
+      <img src="/media/ernest-profile/ernest_semerda_babyfreeze.jpg" width="230" class="img-square">
+      <img src="/media/ernest-profile/ernest_semerda_laugh_159x144.png" width="230" class="img-square">
+
+    </div>
+  </div>
+
+  {% include "/block/signature-share.html" %}
+
+{% endblock %}
+
+{% block disqus_comments %}
+{% endblock %}

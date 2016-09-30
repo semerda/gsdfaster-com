@@ -1,0 +1,41 @@
+#blog-header {
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #000000;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.navbar {
+    border: transparent;
+}
+
+/*
+.navbar-inverse, .navbar-inverse .navbar-fixed-top {
+    background-color: transparent;
+}
+*/
+
+.row-tick {
+    color: green;
+}
+
+.row-cross {
+    color: red;
+}
+
+/* Header image */
+#blog-header {
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}

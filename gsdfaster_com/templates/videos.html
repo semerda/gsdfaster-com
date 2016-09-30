@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block page_title %}Videos of GSDfaster in action{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <h1>Videos of GSDfaster in action</h1>
+            <p>
+              <blockquote class="text-center">
+                <p>Most busiest places are most relaxing. Think library, Internet etc.</p>
+                <footer>David Allen <cite title="GTD - Getting Things Done, Do Lectures">Do Lectures, Getting Things Done</cite></footer>
+              </blockquote>
+            </p>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        
+{% endblock %}
+
+{% block content_body %}
+      
+      <div class="row">
+        
+        <p class="text-center">
+          <iframe width="640" height="480" src="https://www.youtube.com/embed/cth-5fM-2Vg" frameborder="0" allowfullscreen></iframe>
+        </p>
+        <p class="text-center">
+          More videos coming soon.. <a href="/contact/">let me know</a> what videos you would find helpful
+        </p>
+        <p class="text-center">
+          <a href="{{ urls_dict.app_itunes }}" target="_blank">
+            <img class="button-appstore" src="/media/images/app-store-black-on-color.png" width="200">
+          </a>
+        </p>
+
+      </div>
+
+{% endblock %}

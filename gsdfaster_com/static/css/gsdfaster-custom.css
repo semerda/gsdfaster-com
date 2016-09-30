@@ -1,0 +1,103 @@
+
+body {
+  font-family: 'Open Sans', serif;
+  font-size: 18px;
+}
+
+/* Overwrite Homepage Intro */
+.jumbotron h1 {
+  font-family: 'Open Sans', serif;
+  font-size: 38px;
+}
+
+.jumbotron h2, .container h2 {
+  font-family: 'Open Sans', serif;
+  font-size: 28px;
+}
+
+.jumbotron {
+  background-color: #edece7;
+}
+
+.navbar-inverse {
+  background-color: #edece7;
+  border-color: #edece7;
+}
+
+/* Overwrite Header Nav */
+#navbar {
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.navbar-brand {
+    padding: 0px 15px;
+}
+
+.navbar-nav {
+  font-family: 'Open Sans', serif;
+  font-size: 16px;
+}
+
+.navbar-brand {
+  font-family: 'Open Sans', serif;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color: #000000;
+  background-color: transparent;
+}
+
+/* Video iPhone */
+#iphone-frame {
+  display: block;
+  position: absolute;
+  width: 252px;
+  height: auto;
+}
+
+#iphone-content {
+  float: none;
+  clear: both;
+  left: 6px;
+  top: 23px;
+  width: 270px;
+  position: relative;
+  padding-bottom: 78.4%;     
+  padding-top: 25px;
+  height: 486px;
+}
+
+#iphone-content > iFrame {
+  position: absolute;     
+  top: 11.4%;
+  left: 6%;
+  width: 78%;
+  height: 76.8%;
+  z-index: 1;
+}
+
+/* Misc */
+.li-enlarge {
+  font-family: 'Open Sans', serif;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  padding-top: 10px;
+  border-top: 1px #C0C0C0 dotted;
+}
+
+/* Mobile header overwrite */
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #333;
+}
+
+/* Custom */
+
+.text-huge {
+  font-family: 'Open Sans', serif;
+  font-size: 50px;
+  margin: 0px;
+}

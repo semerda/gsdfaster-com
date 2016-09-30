@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% block page_title %}Context in GTD{% endblock %}
+
+{% block page_meta %}
+<link rel="stylesheet" href="/media/css/gsdfaster-blog.css">
+<style>
+#blog-header {
+    background-image: url('/media/blog/home-vs-office.jpg');
+}
+</style>
+{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+        
+{% endblock %}
+
+{% block content_body %}
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row">
+        <h1>Context in GTD</h1>
+        <p>
+          <blockquote>
+            con·text<br />
+            <em>noun</em><br />
+            the circumstances that form the setting for an event, statement, or idea, and in terms of which it can be fully understood and assessed.
+          </blockquote>
+        </p>
+      </div>
+      
+      <div class="row">
+        <p>How many times have you collected something at home to do later at work? Or created a shopping list to be executed when you are shopping? And then later forgot to do it in those location. Frustrating right? Wouldn’t it be nice to only see the stuff you should do when in context? For example; you go shopping and your trusted source of todos shows you everything speicific to that context, being stuff you should buy or research. Yeah that would feel give us all peace of mind and help move those todos off the list.</p>
+      </div>
+
+      <div class="row">
+        <h2>What is Context</h2>
+
+        <p><strong>Context is a Location specific place. Context defines where the action can be done, or what equipment you need to perform it.</strong> This is especially useful since you would not be buying milk & bread (another to-do) @Work only @Shopping. So anything non @Work is not relevant to your context unless you are at a location more appropriate.</p>
+      </div>
+
+      <div class="row">
+        <h3>Rules</h3>
+        <p>
+          <ul>
+            <li>Context is prefixed with a @ — this is just cosmetic and helps identify the tag as location based aka Context.</li>
+            <li>For clarity, where a Tag takes the form of identifying a note like a Category name the Context specifies where it should be performed.</li>
+          </ul>
+        </p>
+        <p>
+          <blockquote>
+            <p>“If you’re like me, and find it useful to track of all things to talk to your spouse about, stuff to pick up at the store, and emails you need to compose. It’s a lot easier to simply turn to a list that already has things to do sorted by their context, where you can see your eight calls in one click glance.”</p>
+            <footer>David Allen <cite title="GTD - Getting Things Done">Getting Things Done</cite></footer>
+          </blockquote>
+        </p>
+      </div>
+
+      <div class="row">
+        <h2>Examples</h2>
+
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Action</th>
+              <th>Context</th>
+              <th>Tag</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cleanup house before the guests arrive.</td>
+              <td>@Home</td>
+              <td>#expense</td>
+            </tr>
+            <tr>
+              <td>Buy organic milk and wholewheat bread from Wholefoods.</td>
+              <td>@Shopping</td>
+              <td>#expense</td>
+            </tr>
+            <tr>
+              <td>Finish up stability report for Mr Smith.</td>
+              <td>@Work</td>
+              <td>report</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Add Context at the point of Processing</h3>
+          
+          <p>When processing tasks, mark the note with a Context. You can also do this to your existing notes.</p>
+
+          <p>Then once you have marked a note with a Context, you can filter by that Context in any of the Buckets like Next Actions, Projects. et al.</p>
+
+          <p>Yes it’s that simple. Now when you are at work you can filter all your notes by @Home Context and not be interrupted by other non-relevant tasks at Home (the context). The important thing here is to be able to assess — at a glance — what your possible actions are depending on where you physically are and what equipment you have available.</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-center">Assign @Home</h3>
+          <img src="/media/screenshots/edit-note.png" class="center-block" width="252">
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-center">Filter by Context</h3>
+          <img src="/media/screenshots/bucket-filter-arrows.png" class="center-block" width="252">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Customize Context</h3>
+
+          <p>To add your own Context to the default short list, head into Settings view (gear icon located top left inside the Buckets view) and from within the Settings press “Manage Context” as shown right.</p>
+
+          <p>Super easy to setup and get going. Here’s to your productivity!</p>
+        </div>
+        <div class="col-md-4">
+          <img src="/media/screenshots/settings-arrow-context.png" class="center-block" width="252">
+        </div>
+        <div class="col-md-4">
+          <img src="/media/screenshots/settings-context-arrows.png" class="center-block" width="252">
+        </div>
+      </div>
+
+      <div class="row">
+        <p>
+          <pre>GTD Context is available in GSDfaster <a href="/blog/get-app-version/">app version</a> 1.6.1+ and Settings Management of Context in v1.6.2+</pre>
+        </p>
+      </div>
+
+      {% include "/block/signature-share.html" %}
+
+      <div class="row">
+        <div class="col-md-6">
+          <p><a href="/blog/priority-urgent-vs-important/">&#10094; Urgent vs Important - what is truly priority?</a></p>
+        </div>
+        <div class="col-md-6">
+          <p class="pull-right"><a href="/blog/touchid-fingerprint-identity/">Touch ID – fingerprint recognition security &#10095;</a></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+
+      {% include "block/nav-list.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content_newsletter %}
+{% endblock %}

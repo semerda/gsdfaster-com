@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% block page_title %}Send to Calendar: Native Calendar Sync{% endblock %}
+
+{% block page_meta %}
+<link rel="stylesheet" href="/media/css/gsdfaster-blog.css">
+<style>
+#blog-header {
+    background-image: url('/media/blog/o-CALENDAR-facebook.jpg');
+}
+</style>
+{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+
+{% endblock %}
+
+{% block content_body %}
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row">
+        <h1>Send to Calendar: Native Calendar Sync</h1>
+      </div>
+      
+      <div class="row">
+        <p>The native calendar on the iPhone, iPad and Mac works. It works really well. Plus it is integrated into your operating system. This means no messy wires to set it up. It just works out of the box. This is the reason I decided to integrate GSDfaster with the native calendar instead of building out a whole new calendar feature inside the app. Why rebuild something that’s already good. This means I can focus on delivering you the best GTD app vs trying to be everything but expert of none. Bonus win for everyone!</p>
+      </div>
+
+      <div class="row">
+        <h2>How to Activate Calendar Sync</h2>
+
+        <div class="col-md-4">
+          <p><strong>1.</strong> Go to "Buckets" view and click on the cog icon (in the header top left) to open "Settings" view.</p>
+
+          <p><strong>2.</strong> Scroll down to "Send to Calendar".</p>
+
+          <p><strong>3.</strong> Flick the ON switch located in the Header to activate this functionality and select your Default calendar by clicking on the appropriate cell label. For convenience, a Default Calendar simply means it will be pre-selected in a list of Calendars available.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="/media/screenshots/settings-send-to-calendar.png" class="center-block" width="100%">
+        </div>
+        <div class="col-md-4">
+          <p><strong>Missing a Calendar in this list?</strong> Then you may need to add it to connect it on your phone. Scroll down below for instructions on how to Integrate with iCloud, Exchange, Google, Yahoo, AOL and Outlook.</p>
+
+          <p><strong>Calendar Colors</strong> are based on the colors you have selected inside your Native Calendar settings. They are used here as a reference. If you do not have any native Calendars enabled on your device, please do so. Otherwise this feature to Send to Calendar will not work.
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <p><strong>4.</strong> Now go into your Process bucket and sticking to the systematical GTD fundamental principles, start processing your stuff. Note how “Add to Calendar” (pictured right) is automatically set with your Default Calendar you set in step above. You can change the Destination Calendar here for this Note by scrolling to another calendar in your list of connected Calendars.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="/media/screenshots/edit-note-calendar-map.png" class="center-block" width="100%">
+        </div>
+        <div class="col-md-4">
+          <p><strong>Repeating Tasks</strong> are available with options for Daily, Weekly and Monthly. You specify how many times it should repeat and GSDfaster app will push all those entries into your selected calendar.</p>
+
+          <p>There are <strong>2 Calendar Alarms</strong> per entry. 1 day prior to the event and another 15 mins before the due date. If you require more please <a href="/contact/">contact Ernest</a> with your ideas and/or use your native calendar to extend the alarms..</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <h2>Permission to use Calendar</h2>
+
+        <p>If the steps above do not have an effect, it may be your privacy settings not allowing GSDfaster with Calendar permissions. To enable GSDfaster with Calendar permissions, on your phone go to:</p>
+        <p>
+          <blockquote>Settings > Privacy > Calendars</blockquote>
+        </p>
+        <p>There you will see GSDfaster, slide the switch so it shows green. And now everything should work perfectly. If it doesn’t please <a href="/contact/">contact us</a>.</p>
+      </div>
+
+      <div class="row">
+        <h2>iCloud bonus</h2>
+
+        <p>The beauty of using the phone’s calendar is if you are also using iCloud to sync your iPhone to your Mac to your iPad, you will get notified of the due stuff on those devices too. Cool hey. That’s the beauty of integrating with already great services on the Mac vs trying to redesign the Calendar and have you mentally fight over retaining memory of 2 calendars.</p>
+      </div>
+
+      <div class="row">
+        <h3>Integrate with iCloud, Exchange, Google, Yahoo, AOL and Outlook</h3>
+
+        <div class="col-md-8">
+          <p>If you are using:
+            <ul>
+              <li>iCloud Calendar</li>
+              <li>Exchange Mail Server</li>
+              <li>Google Mail</li>
+              <li>Yahoo Mail</li>
+              <li>AOL or</li>
+              <li>Outlook Mail & Calendar</li>
+            </ul>
+            then GSDfaster can sync your ToDos to these Calendar. But 1st enable it in your device (see below)
+            <blockquote>Settings > Mail, Contacts, Calendars > Add Account</blockquote>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img src="/media/screenshots/calendar-options.png" class="center-block" width="252">
+        </div>
+      </div>
+
+      <div class="row">
+        <p>
+          <pre>Send to Calendars (plural) available in GSDfaster <a href="/blog/get-app-version/">app version</a> 1.6.4+ while Send to Calendar available in 1.6.1+</pre>
+        </p>
+      </div>
+
+      {% include "/block/signature-share.html" %}
+
+      <div class="row">
+        <div class="col-md-6">
+          <p><a href="/blog/dwight-eisenhowers-urgency-importance-decision-matrix/">&#10094; Dwight Decision Matrix</a></p>
+        </div>
+        <div class="col-md-6">
+          <p class="pull-right"><a href="/blog/infinity-save-collect-even-faster/">Infinity save: Collect even Faster &#10095;</a></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+
+      {% include "block/nav-list.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content_newsletter %}
+{% endblock %}

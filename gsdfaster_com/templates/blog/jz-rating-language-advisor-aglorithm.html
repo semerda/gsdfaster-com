@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block page_title %}JZ Rating - Clarity in your Next Actions{% endblock %}
+
+{% block page_meta %}
+<link rel="stylesheet" href="/media/css/gsdfaster-blog.css">
+<style>
+#blog-header {
+    background-image: url('/media/blog/the-matrix-raining-code.jpg');
+}
+</style>
+{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+
+{% endblock %}
+
+{% block content_body %}
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row">
+        <h1>JZ Rating - Clarity in your Next Actions</h1>
+      </div>
+
+      <div class="row">
+        <p>Get excited! This is really cool and exclusive only to GSDfaster. A unique algorithm developed by <a href="/about/">Ernest</a> (GSDfaster founder) that's going to change how you take notes.</p>
+        <p>Currently being beta tested with a closed group of users. If you want to know more <a href="/contact/">please send a message</a>.</p>
+      </div>
+
+      {% include "/block/signature-share.html" %}
+
+      <div class="row">
+        <div class="col-md-6">
+          <p><a href="/blog/pomodoro-technique/">&#10094; The Pomodoro Technique</a></p>
+        </div>
+        <div class="col-md-6">
+          <p class="pull-right"><a href="/blog/">The GTD Knowledge Center &#10095;</a></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+
+      {% include "block/nav-list-2.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content_newsletter %}
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block page_title %}Reporting Bugs{% endblock %}
+
+{% block page_meta %}
+<link rel="stylesheet" href="/media/css/gsdfaster-blog.css">
+<style>
+#blog-header {
+    background-image: url('/media/blog/Starship-Troopers.jpg');
+}
+</style>
+{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+
+{% endblock %}
+
+{% block content_body %}
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row">
+        <h1>Reporting Bugs</h1>
+        <p>
+          <blockquote>
+            <p>Newsreel announcer: Young people all over the globe are joining up to save the future.</p>
+            <p>Newsreel announcer: Everyone is doing their part. Are you?</p>
+            <footer>Starship Troopers (1997)</footer>
+          </blockquote>
+        </p>
+      </div>
+
+      <div class="row">
+        <p>Ok so you invested in GSDfaster and there is a bug. What's next?</p>
+
+        <p><img src="/media/blog/dontpanic-1024x783.jpeg" class="center-block" width="500"></p>
+
+        <p><strong>My primary intention is to always address user feedback (bugs, suggestions, hellos, et al).</strong> This product is constantly evolving. Growing more remarkable every release. Please expect some level of bugs along the way. I support this app out of my love for getting things done. I am not a company. Please read about <a href="/about/">my philosophy here</a>.</p>
+
+        <h3>If you found a bug contact me</h3>
+
+        <p>If you found a bug, email me: <span itemprop="email"><a href='mailto&#58;as&#107;&#64;%67s&#100;f&#97;%&#55;3te%7&#50;&#46;com'>as&#107;&#64;gsdfaster&#46;&#99;om</a></span></p>
+
+        <p>This email goes directly to me (Ernest), the founder of GSDfaster. So you get to hear from the horses mouth. And please always include a screenshot. A picture is worth a 1000 words and will speed up the communication.</p>
+      </div>
+
+      <div class="row">
+        <h2>Please Avoid</h2>
+        <p>
+            <ul>
+                <li>Leaving a negative comment on iTunes. Apart from hurting the app’s rating it doesn’t help anyone really except for the ego to vent. When you email me feel free to vent </p>
+                <li>1 liner emails. Please be explicit and explain the steps for me to reproduce the problem. Again, a screenshot is worth a thousand words.</li>
+            </ul>
+        </p>
+      </div>
+
+      {% include "/block/signature-share.html" %}
+
+      <div class="row">
+        <div class="col-md-6">
+          <p><a href="/blog/your-new-superpowers/">&#10094; Your NEW Superpowers</a></p>
+        </div>
+        <div class="col-md-6">
+          <p class="pull-right"><a href="/blog/">The GTD Knowledge Center &#10095;</a></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+
+      {% include "block/nav-list-3.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content_newsletter %}
+{% endblock %}

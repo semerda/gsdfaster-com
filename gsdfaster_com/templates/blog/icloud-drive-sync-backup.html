@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% block page_title %}iCloud Sync and Backup your data{% endblock %}
+
+{% block page_meta %}
+<link rel="stylesheet" href="/media/css/gsdfaster-blog.css">
+<style>
+#blog-header {
+    background-image: url('/media/blog/02_iCloud_icon_1.png');
+}
+</style>
+{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+
+{% endblock %}
+
+{% block content_body %}
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row">
+        <h1>iCloud Sync</h1>
+        <p>
+          <blockquote>
+            iCloud is a cloud storage and cloud computing service from Apple Inc.
+          </blockquote>
+        </p>
+      </div>
+      
+      <div class="row">
+        <p>If you were a GSDfaster user back in 2015 you would have used Dropbox Sync inside GSDfaster to backup and sync between your iOS devices. Dropbox offered a great service to developers called Dropbox Sync. It basically allowed GSDfaster to use your own Dropbox storage as a tool to store & sync your GSDfaster app data. Then Dropbox decided to <a href="https://blogs.dropbox.com/developers/2015/04/deprecating-the-sync-and-datastore-apis/">deprecate Dropbox Sync</a>. Basically get rid of this great feature. And replaced it with their new API. Their new API unfortunately is like any other cookie-cutter API. No more sync. No more unique benefit from Dropbox.</p>
+      </div>
+
+      <div class="row">
+        <h2>How to Activate iCloud Sync</h2>
+
+        <div class="col-md-4">
+          <h3 class="text-center">1. Access Settings</h3>
+          <img src="/media/screenshots/buckets-settings-arrow.png" class="center-block" width="100%">
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-center">2. Turn on iCloud Sync</h3>
+          <img src="/media/screenshots/settings-icloud-switch-arrows.png" class="center-block" width="100%">
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-center">3. Read Caution</h3>
+          <img src="/media/screenshots/settings-icloud-alert.png" class="center-block" width="100%">
+        </div>
+      </div>
+
+      <div class="row">
+        <h3>Take Note</h3>
+        <p>
+          <ol>
+            <li><strong>iCloud is incompatible with previous iCloud Document & Data storage.</strong> So if you’re going to test, make sure all your devices are using iCloud and iOS 8. The latest version of iOS mobile is iOS 9 and Mac OS X El Capitan version 10.x. If these sound familiar then you most likely upgraded to iCloud. So nothing to worry about. Happy Sync’ing!</li>
+            <li><strong>If your notes disappear when you turn this on it’s ok, you havent lost anything.</strong> Switching to iCloud is like switching to a new backend (data source). You can turn off iCloud and your old notes will appear again. I’m looking at a way to merge the 2 but for now think of it like 2 data sources.</li>
+          </ol>
+        </p>
+
+        <h3>2 data stores</h3>
+
+        <p>If your 1st encounter was working with the app with iCloud turned on you can ignore this warning. Otherwise please take note especially if after you flicked the switch on for iCloud and noticed all your data gone. It is because the 2nd data store was activate. You have NOT lost any data. Your old data is still there. It is on the 1st data store. I recommend you migrate the data by switching between the 2 stores (iCloud on/off) until such time when you have fully migrated and can leave iCloud enabled. Please contact me directly if you need further clarification on ask@gsdfaster.com</p>
+
+        <p>If you are a developer and can suggest an alternative fix for this strange behavior please contact me. I’ve been trying to find an alternative method to no avail and thus welcome any support I can get.</p>
+      </div>
+
+      <div class="row">
+        <h3>Q&A</h3>
+
+        <div class="col-md-3">
+          <img src="/media/screenshots/settings-icloud-detail.png" class="center-block" width="100%">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Q1:</strong> After switching to iCloud I lost my Projects.</p>
+          <p><strong>A1:</strong> Head into GSDfaster's Settings view and press "Reload Default Projects List" located at the bottom of the list of Settings.</p>
+
+          <hr />
+
+          <p><strong>Q2:</strong> My iPhone isnt syncing to my iPad/2nd iPhone.</p>
+          <p><strong>A2:</strong> 
+            <br />1. Verify that both devices have the same iCloud account turned ON (screenshot left),
+            <br />2. Force restart the GSDfaster application. (screenshot right)</p>
+        </div>
+        <div class="col-md-3">
+          <img src="/media/screenshots/ios-multitasking.png" class="center-block" width="100%">
+        </div>
+
+      </div>
+
+      <div class="row">
+        <p>
+          <pre>iCloud Sync for GSDfaster is available in GSDfaster <a href="/blog/get-app-version/">app version</a> 1.6.2+</pre>
+        </p>
+      </div>
+
+      {% include "/block/signature-share.html" %}
+
+      <div class="row">
+        <div class="col-md-6">
+          <p><a href="/blog/touchid-fingerprint-identity/">&#10094; Touch ID – fingerprint recognition security</a></p>
+        </div>
+        <div class="col-md-6">
+          <p class="pull-right"><a href="/email-share-notes/">Share your Notes via Email &#10095;</a></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+
+      {% include "block/nav-list.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content_newsletter %}
+{% endblock %}

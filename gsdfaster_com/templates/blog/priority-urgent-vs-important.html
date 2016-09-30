@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% block page_title %}Notes Priority: What to do Next?{% endblock %}
+
+{% block page_meta %}
+<link rel="stylesheet" href="/media/css/gsdfaster-blog.css">
+<style>
+#blog-header {
+    background-image: url('/media/blog/high-priority-web-header.jpg');
+}
+</style>
+{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+        
+{% endblock %}
+
+{% block content_body %}
+  
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row">
+        <h1>Notes Priority: What to do Next?</h1>
+        <p>
+          <blockquote>
+            Urgent > Important
+          </blockquote>
+        </p>
+      </div>
+      
+      <div class="row">
+        <p>You are a busy body. A busy mind is a mind full of ideas. You are dropping ideas and todos into GSDfaster fast. Filling up those Buckets and Projects with a stack of actionable items. When it comes to ticking off those todos (the doing part) that list of todos can look overwhelming. But of course you prioritized them the right way? If you haven't its ok, let's run through the best practise on how to do this.</p>
+
+        <h2>Enter Urgent and Important</h2>
+
+        <p>You may be familiar with the Low, Medium and High Priority ratings but we don't use them in GSDfaster. They are relative and carry a different meaning to each individual. We want something that has a stronger action connection like Urgent and Important. Let's take a closer look at each:</p>
+
+        <blockquote>
+        ur·gent<br />
+        <em>adjective</em><br />
+        (of a state or situation) requiring immediate action or attention.
+        </blockquote>
+
+        <blockquote>
+        im·por·tant<br />
+        adjective</em><br />
+        of great significance or value; likely to have a profound effect on success, survival, or well-being.
+        </blockquote>
+
+        <p>
+          <strong>Q:</strong> Can a task be both Urgent and Important?<br />
+          <strong>A:</strong> Nope. If something is Urgent is requires immediate action. Therefore you should do it asap. We can deduce that Urgent > Important.
+        </p>
+        <p>
+          <strong>Q:</strong> Is there more magic to this?<br />
+          <strong>A.</strong> Yes. Take a look at the <a href="/blog/dwight-eisenhowers-urgency-importance-decision-matrix/">Dwight-Eisenhowers urgency importance decision matrix</a> post I wrote which nicely explains the origins and connection.
+        </p>
+      </div>
+
+      <div class="row">
+        <h2>Example</h2>
+        <p>We create 3 notes and mark each with a different priority as follow..</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <h3 class="text-center">Is Important<br />only</h3>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-center">+ Is Important and Urgent</h3>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-center">+ Not Important or Urgent</h3>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-center">= Sorted in Bucket</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="/media/screenshots/priority-important.png" class="center-block" width="100%">
+        </div>
+        <div class="col-md-3">
+          <img src="/media/screenshots/priority-important-urgent.png" class="center-block" width="100%">
+        </div>
+        <div class="col-md-3">
+          <img src="/media/screenshots/priority-not-set.png" class="center-block" width="100%">
+        </div>
+        <div class="col-md-3">
+          <img src="/media/screenshots/priority-3-types.png" class="center-block" width="100%">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">&nbsp;</div>
+        <div class="col-md-6">&nbsp;</div>
+      </div>
+
+      <div class="row">
+        
+          <p>After Processing these 3 notes into the Next actions bucket, GSDfaster will sort them in the appropriate priority order Urgent > Important > The Rest.</p>
+
+          <p>
+            <ol style="margin:8px;">
+              <li style="background-color:#ffe8e8"><strong>Urgent</strong> – marked in Salmon color</li>
+              <li style="background-color:#ffefc0"><strong>Important</strong> – marked in Yellow color and</li>
+              <li>The rest of the notes without a priority are plain White.</li>
+            </ol>
+          </p>
+          <p>So now you know which need to be addressed 1st. The notes colored in Salmon color followed by Yellows and then the Whites. Easy right?</p>
+
+          <p>Clarity over what to do next has been achieved using this better form of prioritization. Give it a shot and see how it changes your way of getting things done today.</p>
+
+      </div>
+
+      <div class="row">
+        <p>
+          <pre>Notes Priority is available in GSDfaster app version 1.6.1+</pre>
+        </p>
+      </div>
+
+      {% include "/block/signature-share.html" %}
+
+      <div class="row">
+        <div class="col-md-6">
+          <p><a href="/blog/">&#10094; The GTD Knowledge Center</a></p>
+        </div>
+        <div class="col-md-6">
+          <p class="pull-right"><a href="/blog/gtd-context-location/">GTD Context &#10095;</a></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+
+      {% include "block/nav-list.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content_newsletter %}
+{% endblock %}

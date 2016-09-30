@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% block page_title %}Contact Ernest @ GSDfaster{% endblock %}
+
+{% block page_meta %}
+<link rel="stylesheet" href="/media/css/gsdfaster-blog.css">
+<link rel="stylesheet" href="/media/css/social.css">
+<style>
+#blog-header {
+    background-image: url('/media/images/mountain-view-aerial-shot_m.jpg');
+}
+</style>
+{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        
+{% endblock %}
+
+{% block content_body %}
+      
+<div class="row">
+  <div class="col-md-9">
+
+      <h1>Contact Ernest @ GSDfaster</h1>
+      
+      <p>
+        <blockquote>
+          <p>"Most busiest places are most relaxing. Think library, Internet etc."</p>
+          <footer>David Allen <cite title="GTD - Getting Things Done, Do Lectures">Do Lectures, Getting Things Done</cite></footer>
+        </blockquote>
+      </p>
+      <p>
+        <div itemscope itemtype="http://schema.org/Organization">
+          <span itemprop="name">{{ request_path }}GSDfaster is headquartered in Mountain View, California.</span>
+          <dl class="dl-horizontal">
+            <dt>Email</dt>
+            <dd><span itemprop="email"><a href='mailto&#58;as&#107;&#64;%67s&#100;f&#97;%&#55;3te%7&#50;&#46;com'>as&#107;&#64;gsdfaster&#46;&#99;om</a></span></dd>
+            <dt>Twitter</dt>
+            <dd><a class="about-social-icon twitter" href="https://twitter.com/gsdfaster" itemprop="url"><i class="icon-twitter"></i> https://twitter.com/gsdfaster</a></dd>
+            <dt>Facebook</dt>
+            <dd><a href="https://www.facebook.com/gsdfaster">https://www.facebook.com/gsdfaster</a></dd>
+            <dt>&nbsp;</dt>
+            <dd>&nbsp;</dd>
+            <dt>Feedback</dt>
+            <dd><a href="{{ urls_dict.support }}">Online Form</a></dd>
+            <dt>Subscribe</dt>
+            <dd><a href="{{ urls_dict.newsletter }}">GTD Newsletter</a></dd>
+          </dl>
+        </div>
+      </p>
+        
+  </div>
+  <div class="col-md-3">
+      
+    <div class="row">
+      <h3>Related reading material..</h3>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <i class="fa fa-book" aria-hidden="true"></i> 
+          <a href="/blog/reporting-bugs/">Reporting Bug(s)</a>
+        </li>
+        <li class="list-group-item">
+          <i class="fa fa-book" aria-hidden="true"></i> 
+          <a href="/blog/customer-testimonials-dec2015-jan2016/">Thank You loyal Customers! Customer Testimonials</a>
+        </li>
+        <li class="list-group-item">
+          <i class="fa fa-book" aria-hidden="true"></i> 
+          <a href="/blog/gsdfaster-vs-gtdfaster/">GSDfaster vs GTDfaster – which one is right for me?</a>
+        </li>
+      </ul>
+    </div>
+
+    <!--div class="row">
+      <a name="socialconnection"></a>
+      <h3>Ernest on Social Media</h3>
+
+      <p>
+        <div class="wrapper">              
+          <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline"> 
+            <li><a href="https://twitter.com/ernestsemerda"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/semerda"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://plus.google.com/+ErnestSemerda/"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+    </div-->
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% block disqus_comments %}
+{% endblock %}
+
+{% block content_newsletter %}
+{% endblock %}

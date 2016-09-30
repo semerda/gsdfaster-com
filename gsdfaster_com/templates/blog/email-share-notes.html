@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% block page_title %}Share your Notes via Email{% endblock %}
+
+{% block page_meta %}
+<link rel="stylesheet" href="/media/css/gsdfaster-blog.css">
+<style>
+#blog-header {
+    background-image: url('/media/blog/Social-Sharing-Main.jpg');
+}
+</style>
+{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+
+{% endblock %}
+
+{% block content_body %}
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row">
+        <h1>Share your Notes via Email</h1>
+      </div>
+
+      <div class="row">
+        <p>Getting stuff into GSDfaster is easy. And the same is true for getting stuff out of GSDfaster. GSDfaster sports a feature called “Email Share”. Put simply, when activated, this feature allows you to send your note to yourself as a reminder or to another party as a note that you either require some action from them, waiting for something or simply a reminder. This becomes a powerful collaborative tool and personal nudge via email.</p>
+
+        <p><strong>Pre-requisite:</strong> You need to have the native mail turned on. Here is a quick guide from apple how to do it. Otherwise contact me on ask@gsdfaster.com and I can guide you through this. It’s fast & easy.</p>
+      </div>
+
+      <div class="row">
+        <h2>How to Activate Email Share</h2>
+
+        <div class="col-md-4">
+          <h3 class="text-center">1. Access Settings</h3>
+          <img src="/media/screenshots/buckets-settings-arrow.png" class="center-block" width="100%">
+        </div>
+        <div class="col-md-4">
+          <h3>&nbsp;</h3>
+          <p>By default Email Share is turned off.</p>
+          <p>To activate it, head to GSDfaster's "Settings" view (accessible from Buckets view) as illustrated on the left.</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-center">2. Turn on Email Share</h3>
+          <img src="/media/screenshots/settings-email-share-arrows.png" class="center-block" width="100%">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="text-center">Export Bucket</h3>
+          <img src="/media/screenshots/email-share-bucket-arrow.png" class="center-block" width="100%">
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-center">Export Note</h3>
+          <img src="/media/screenshots/email-share-note-arrow.png" class="center-block" width="100%">
+        </div>
+        <div class="col-md-4">
+          <h3>&nbsp;</h3>
+          <p>Now that you have activated Email Share, left is a screenshot of what to expect inside the app.</p>
+          <p>Where ever you notice the “mail icon”, this means the content in the body of the view can be send via email. Press it. You will see the mail app open up prefilled with your notes/stuff.</p>
+          <p><strong>For Buckets</strong> the export bundles all the notes inside the Bucket into a CSV file pipe delimited.</p>
+          <p><strong>For a Note</strong> the export is a plain text email with all the data properties.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <p>
+          <pre>Share your Notes via Email is available in GSDfaster <a href="/blog/get-app-version/">app version</a> 1.6.0+</pre>
+        </p>
+      </div>
+
+      {% include "/block/signature-share.html" %}
+
+      <div class="row">
+        <div class="col-md-6">
+          <p><a href="/blog/icloud-drive-sync-backup/">&#10094; Sync & Backup your notes using iCloud Drive</a></p>
+        </div>
+        <div class="col-md-6">
+          <p class="pull-right"><a href="/blog/dwight-eisenhowers-urgency-importance-decision-matrix/">Eisenhower’s Urgency-Importance Decision Matrix &#10095;</a></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+
+      {% include "block/nav-list.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content_newsletter %}
+{% endblock %}

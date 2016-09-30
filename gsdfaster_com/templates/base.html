@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+    NICE! All great software engineers view source code.
+    Consider yourself one of the few!
+    
+    Also check out the blog http://www.theroadtosiliconvalley.com/
+     - all about one Aussie's Journey across the globe to Silicon Valley.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="GSDfaster is a premium productivity tool you can rely on to offload stuff from your mind into a trusted source.">
+    <meta name="author" content="Ernest Semerda">
+    <title>{% block page_title %}Get Stuff Done faster and be more productive{% endblock %} - GSDfaster.com</title>
+
+    <link rel="icon" href="/media/favicon.ico">
+
+    <link rel="stylesheet" href="/media/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/media/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <!--link href="/media/css/sticky-footer.css" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="/media/css/gsdfaster-custom.css">
+    {% block page_meta %}{% endblock %}
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/media/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!--link href="/media/css/non-responsive.css" rel="stylesheet"-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Open Graph Markup https://developers.facebook.com/docs/sharing/webmasters#markup -->
+    <meta property="fb:app_id" content="228077447254371"/>
+    <meta property="og:site_name" content="gsdfaster.com"/>
+    <meta property="og:title" content="Get Stuff Done Faster & Be More Productive"/>
+    <meta property="og:description" content="GSDfaster is a distributed cognition tool you can trust to empty your mind, gain control & focus."/>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.gsdfaster.com/"/>
+    <meta property="og:image" content="/media/marketing/marketing-gsdfaster.png"/>
+
+    <!-- Twitter Cards https://dev.twitter.com/cards/overview -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Get Stuff Done Faster & Be More Productive"/>
+    <meta name="twitter:description" content="GSDfaster is a distributed cognition tool you can trust to empty your mind, gain control & focus."/>
+    <meta name="twitter:image" content="/media/marketing/marketing-gsdfaster.png"/>
+    <meta name="twitter:creator" content="@gsdfaster"/>
+    <meta name="twitter:site" content="@gsdfaster"/>
+    
+    <!-- Webmaster site verifications -->
+    <meta name="google-site-verification" content="r9gVYXnHi3N5rsVFPMiRgPHJhbpHTFAwcR_NXGDHqU8"/>
+    <meta name="msvalidate.01" content="A77599701612648B603556AF7BB5E29A"/>
+    <!-- App GSDfaster id -->
+    <meta name="apple-itunes-app" content="app-id=488633128, affiliate-data=fUTAKGwchOI">
+    
+    {% include "/block/fb-pixel.html" %}    
+  </head>
+
+  <body id="{{ page_id }}">
+  {% include "/block/google-analytics.html" %}
+
+  <div id="blog-header">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="/media/images/gtd-circle-icon175x175-transparent.png" height="50" alt="GSDfaster - Collect, Control and Focus">
+          </a>
+          <a href="{{ urls_dict.app_itunes }}" target="_blank" class="visible-xs-block pull-right">
+            <img class="button-appstore" src="/media/images/app-store-black-on-color.png" height="50" style="padding:5px;" alt="Download GSDfaster app from iTunes App Store">
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li {% if page_id == 'home' %} class="active"{% endif %}><a href="/">Home</a></li>
+            <li {% if page_id == 'about' %} class="active"{% endif %}><a href="/about/">About</a></li>
+            <li {% if page_id == 'contact' %} class="active"{% endif %}><a href="/contact/">Contact</a></li>
+            <li {% if page_id == 'blog' %} class="active"{% endif %}><a href="/blog/">Learn</a></li>
+          </ul>
+          <div class="nav navbar-nav navbar-right">
+            <a href="{{ urls_dict.app_itunes }}" target="_blank">
+              <img class="button-appstore" src="/media/images/app-store-black-on-color.png" height="50" style="padding:5px;" alt="Download GSDfaster app from iTunes App Store">
+            </a>
+          </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+
+        {% block content_jumbotron %}
+        {% endblock %}
+        
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+
+      {% block content_body %}
+      {% endblock %}
+
+      {% block disqus_comments %}
+      <!-- Disqus Comments -->
+      <div class="row">
+        <hr />
+        {% include "block/disqus-comments.html" %}
+      </div>
+      {% endblock %}
+
+    </div> <!-- /container -->
+
+    {% block content_newsletter %}
+    <div class="jumbotron">
+      <div class="container">
+        <h2 class="text-center">Subscribe to GTD Newsletter</h2>
+        <p class="text-center">Never miss an important blog post, tweet or app update. I promise no spam, just useful updates.</p>
+        <p class="text-center">
+          <a href="{{ urls_dict.newsletter }}" class="btn btn-primary btn-lg">Subscribe</a>
+        </p>
+      </div>
+    </div>
+    {% endblock %}
+
+    <footer class="footer visible-phone">
+      <div class="container">
+        <p class="text-center">
+          <!--small>
+          © 2016 Made with <i class="fa fa-heart" style="color:red" aria-hidden="true"></i> by <a href="http://www.ernestsemerda.com/">Ernest Semerda</a> in Silicon Valley / <a href="about.html">About</a> / <a href="/blog/">Blog</a> / <a href="{{ urls_dict.support }}">Support</a> / <a href="{{ urls_dict.newsletter }}">Newsletter</a> / <a href="{{ urls_dict.app_itunes }}">Get App</a>
+          </small-->
+          <small>
+          © 2016 Made with <i class="fa fa-heart" style="color:red" aria-hidden="true"></i> by <a href="/about/">Ernest Semerda</a> in Silicon Valley, California
+          </small>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/media/js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/media/js/jquery.min.js"><\/script>')</script>
+    <script src="/media/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/media/js/ie10-viewport-bug-workaround.js"></script>
+
+    {% include "/block/schema-org.html" %}
+  </body>
+</html>

@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block page_title %}The GTD Knowledge Center aka the GSDfaster Blog{% endblock %}
+
+{% block page_meta %}
+<style>
+.navbar-inverse .navbar-nav>li>a {
+    color: #000000;
+}
+</style>
+{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <h1>The GTD Knowledge Center</h1>
+            <p>
+              <blockquote class="text-center">
+                <p>"Most productive people are those with nothing in their head."</p>
+                <footer>David Allen <cite title="GTD - Getting Things Done, Do Lectures">Do Lectures, Getting Things Done</cite></footer>
+              </blockquote>
+            </p>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        
+{% endblock %}
+
+{% block content_body %}
+      
+      <div class="row">
+        <!--p><strong>Hello fellow GTD traveller!</strong> You have arrived to the right place. Below is a library of content I have written and continue to expand centered around productivity, the app GSDfaster and the GTD method of getting stuff done. Enjoy and please reach out if you feel something is missing here and you'd like me to cover it.</p-->
+        
+        {% include "block/google-search-engine.html" %}
+
+      </div>
+      
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>How to use app Features</h2>
+
+          {% include "block/nav-list-app-features.html" %}
+        </div>
+        <div class="col-md-6">
+          <h2>Random notes</h2>
+
+          {% include "block/nav-list-random-notes.html" %}
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>On Productivity & GTD</h2>
+
+          {% include "block/nav-list-productivity-gtd.html" %}
+        </div>
+        <div class="col-md-6">
+          <h2>Videos</h2>
+
+          {% include "block/nav-list-videos.html" %}
+        </div>
+
+      </div>
+
+      <!-- Disqus Comments -->
+      <div class="row">
+        <hr />
+        {% include "block/disqus-comments.html" %}
+      </div>
+
+{% endblock %}

@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% block page_title %}Touch ID – fingerprint recognition security{% endblock %}
+
+{% block page_meta %}
+<link rel="stylesheet" href="/media/css/gsdfaster-blog.css">
+<style>
+#blog-header {
+    background-image: url('/media/blog/touchid-ios-apple-breakdown.jpg');
+}
+</style>
+{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+        
+{% endblock %}
+
+{% block content_body %}
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row">
+        <h1>Touch ID</h1>
+        <p>
+          <blockquote>
+            Use your fingerprint to add another layer of security to your app.
+          </blockquote>
+        </p>
+      </div>
+
+      <div class="row">
+        <p>Touch ID provides a 2nd layer of security / protection for your apps. It relies on fingerprint recognition technology embedded in your phone’s home button to identity you as the owner of the device and granting access to apps like GSDfaster. Otherwise if Touch ID can’t recognize you then app access is denied. Simple right?</p>
+      </div>
+
+      <div class="row">
+        <h2>Devices with Touch ID support</h2>
+
+        <p>As of writing (January 2016) Touch ID is currently available on:
+          <ul>
+            <li>iPhone 5S</li>
+            <li>iPhone 6</li>
+            <li>iPhone 6 Plus</li>
+            <li>iPhone 6s</li>
+            <li>iPhone 6s Plus</li>
+            <li>iPad Air 2</li>
+            <li>iPad Pro</li>
+            <li>iPad Mini 3 and iPad Mini 4</li>
+          </ul>
+          If you haven’t setup Touch ID on your device, you can find <a href="https://support.apple.com/en-us/HT201371">Touch ID setup instruction here</a>.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <h2>How to turn on Touch ID for GSDfaster</h2>
+          <p>If you want to enable Touch ID for GSDfaster the follow steps below.
+            <ol>
+              <li>Start your GSDfaster app</li>
+              <li>From the Buckets menu press the cog icon to start Settings view</li>
+              <li>Flick the switch next to Touch ID label until it turns green as pictured. If the label and switch are grayed out it means either your device doesn’t support Touch ID or Touch ID is not enabled</li>
+              <li>Your done. Every time you start GSDfaster to collect stuff you will be asked for your fingerprint (as shown below). Gently placing your thumb over the home button authenticates you</li>
+            </ol>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img src="/media/screenshots/touchid.png" class="center-block" width="252">
+        </div>
+      </div>
+
+      <div class="row">
+        <p>
+          <pre>Touch ID is available in GSDfaster <a href="/blog/get-app-version/">app version</a> 1.6.2+</pre>
+        </p>
+      </div>
+
+      {% include "/block/signature-share.html" %}
+
+      <div class="row">
+        <div class="col-md-6">
+          <p><a href="/blog/gtd-context-location/">&#10094; Context in GTD</a></p>
+        </div>
+        <div class="col-md-6">
+          <p class="pull-right"><a href="/blog/icloud-drive-sync-backup/">Sync & Backup your notes using iCloud Drive &#10095;</a></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+
+      {% include "block/nav-list.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content_newsletter %}
+{% endblock %}

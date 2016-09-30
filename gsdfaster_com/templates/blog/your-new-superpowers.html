@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block page_title %}Your NEW Superpowers{% endblock %}
+
+{% block page_meta %}
+<link rel="stylesheet" href="/media/css/gsdfaster-blog.css">
+<style>
+#blog-header {
+    background-image: url('/media/blog/captain-america-672x372.jpg');
+}
+</style>
+{% endblock %}
+
+{% block content_jumbotron %}
+
+        <div class="row">
+          <div class="col-md-6">&nbsp;</div>
+          <div class="col-md-6">&nbsp;</div>
+        </div>
+
+        <div class="row">
+          <h1></h1>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+
+{% endblock %}
+
+{% block content_body %}
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row">
+        <h1>Your NEW Superpowers</h1>
+        <p>
+          <blockquote>
+            Who doesn't want to be a superhero?
+          </blockquote>
+        </p>
+      </div>
+
+      <div class="row">
+        <p>GSDfaster is a Premium Productivity tool to getting stuff done FASTER and stress FREE. GSDfaster empowers you to offload your ideas & stuff into a trusted source. When you have free time, you process it using the GTD method.</p>
+
+        <h2>Your New Superpowers</h2>
+
+        <h3>*** Never forget a thing ever again! ***</h3>
+
+        <p>GSDfaster allows you to quick dump thoughts, ideas and todos into a trusted source. With new infinity save you can do this faster then before.</p>
+
+        <h3>*** Always be on top of your game! ***</h3>
+
+        <p>People will want to know your secrets! You will be a productivity guru. With Calendar integration you will always be where you need to be and have stuff done.</p>
+      </div>
+
+      <div class="row">
+        <h2>Why GSDfaster over other productivity apps</h2>
+
+        <p>
+          <ul>
+            <li>GSDfaster is made with Love by Ernest Semerda to solve his productivity needs. Not profits and margins. There is zero risk of GSDfaster being killed off or going out of business like other apps supported by a business model.</li>
+            <li>GSDfaster is made to be dead simple so it gets out of your way and does what it should do. Be an awesome GTD note taking tool for offloading stuff from your brain. No bloated features or stuff you do not need. Just a simple and powerful app under your finger.</li>
+            <li>GSDfaster is affordable by anyone. Cheaper than a burger. This app will serve you a lifetime. With lifetime free support.</li>
+          </ul>
+        </p>
+      </div>
+
+      {% include "/block/signature-share.html" %}
+
+      <div class="row">
+        <div class="col-md-6">
+          <p><a href="/blog/apple-watch-gtd-pomodoro/">&#10094; Watch - GTD & Pomodoro on your wrist</a></p>
+        </div>
+        <div class="col-md-6">
+          <p class="pull-right"><a href="/blog/reporting-bugs/">Reporting Bugs &#10095;</a></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3">
+
+      {% include "block/nav-list-3.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content_newsletter %}
+{% endblock %}
