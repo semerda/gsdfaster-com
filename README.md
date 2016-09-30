@@ -7,6 +7,8 @@
 * [GSDfaster](https://itunes.apple.com/us/app/gsdfaster-gtd-todo-lists-pomodoro/id488633128?mt=8)
 * [GTDfaster](https://itunes.apple.com/us/app/gtdfaster-free-get-things/id498872399?mt=8)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cth-5fM-2Vg" frameborder="0" allowfullscreen></iframe>
+
 ## Notes
 
 If you are using the Apache webserver, consider using mod_wsgi.
@@ -17,7 +19,9 @@ http://flask.pocoo.org/docs/0.11/deploying/
 
 LOCAL DEV
 
-$ python app.py runserver -d
+```
+python app.py runserver -d
+```
 
 APACHE CONF
 
